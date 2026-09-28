@@ -127,7 +127,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.5vh;
-  max-width: 52vw;
+  max-width: 100%;
   padding-bottom: 2vh;
   overflow: hidden;
 }
@@ -144,7 +144,7 @@
   display: inline-block;
   align-self: flex-start;
   isolation: isolate;
-  font-size: clamp(24px, 4vh, 56px);
+  font-size: clamp(22px, 3.8vh, 44px);
   line-height: 1.1;
   padding: 0.06em 0.2em 0.04em 0.08em;
   margin-left: -0.08em;
@@ -160,10 +160,10 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  transform: scaleX(1.1);
-  transform-origin: left center;
+  transform: none;
   color: var(--ink);
   text-shadow: 0.04em 0.04em 0 var(--cream);
+  max-width: 100%;
 }
 
 .rs-paper__title-splat {
@@ -243,9 +243,11 @@
 }
 
 .rs-stat__val {
-  font-size: clamp(2rem, 6.4vh, 4.6rem);
+  font-size: clamp(1.6rem, 5vh, 3.6rem);
   line-height: 1;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .rs-stat__val small,

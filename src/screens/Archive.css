@@ -325,23 +325,25 @@
   position: relative;
   display: inline-block;
   isolation: isolate;
-  font-size: clamp(30px, 5.2vh, 66px);
-  line-height: 0.92;
+  font-size: clamp(26px, 4.5vh, 52px);
+  line-height: 0.95;
   padding: 0.06em 0.3em 0.04em 0.08em;
   margin-right: 0.3em;
   margin-left: -0.08em;
   max-width: 100%;
   white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
   transform: none;
 }
 .view__title-text {
   position: relative;
   z-index: 1;
   display: inline-block;
-  transform: scaleX(1.08);
-  transform-origin: left center;
+  transform: none;
   color: var(--ink);
   text-shadow: 0.04em 0.04em 0 var(--cream);
+  max-width: 100%;
 }
 .view__title-splat {
   position: absolute;

@@ -25,23 +25,28 @@
   gap: 0.75vh;
   min-width: 0;
   min-height: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 .pf__name {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.02em;
-  font-size: clamp(44px, 7.6vh, 100px);
-  line-height: 0.86;
+  font-size: clamp(32px, 5.5vh, 72px);
+  line-height: 0.88;
   transform: none;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
 }
 .pf__name-line {
   display: inline-block;
-  transform: scaleX(1.18);
-  transform-origin: left center;
+  transform: none;
   color: var(--cream);
   text-shadow: 0.035em 0.035em 0 var(--ink);
+  max-width: 100%;
 }
 .pf__name-line--red {
   position: relative;
@@ -49,15 +54,16 @@
   padding: 0.04em 0.52em 0.04em 0.06em;
   margin-left: -0.06em;
   transform: none;
+  max-width: 100%;
 }
 .pf__name-text {
   position: relative;
   z-index: 1;
   display: inline-block;
-  transform: scaleX(1.18);
-  transform-origin: left center;
+  transform: none;
   color: var(--ink);
   text-shadow: 0.035em 0.035em 0 var(--cream);
+  max-width: 100%;
 }
 .pf__name-splat {
   position: absolute;
@@ -268,7 +274,7 @@
 .pf__virtues {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1vw;
   padding: 1.6vh 0 1.8vh;
   border-top: 1px solid var(--line-faint);

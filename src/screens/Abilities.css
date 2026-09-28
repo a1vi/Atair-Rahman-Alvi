@@ -178,22 +178,24 @@
   display: inline-block;
   align-self: flex-start;
   isolation: isolate;
-  font-size: clamp(40px, 7.4vh, 92px);
-  line-height: 0.9;
+  font-size: clamp(32px, 6vh, 72px);
+  line-height: 0.95;
   padding: 0.06em 0.2em 0.04em 0.08em;
   margin-left: -0.08em;
   max-width: 100%;
   white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
   transform: none;
 }
 .ab__title-text {
   position: relative;
   z-index: 1;
   display: inline-block;
-  transform: scaleX(1.12);
-  transform-origin: left center;
+  transform: none;
   color: var(--ink);
   text-shadow: 0.04em 0.04em 0 var(--cream);
+  max-width: 100%;
 }
 .ab__title-splat {
   position: absolute;

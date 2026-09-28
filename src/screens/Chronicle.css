@@ -60,12 +60,13 @@
   position: absolute;
   right: 3vw;
   top: 10vh;
-  font-size: clamp(120px, 26vh, 300px);
+  font-size: clamp(80px, 18vh, 180px);
   line-height: 1;
   color: var(--paint);
-  opacity: 0.9;
+  opacity: 0.15;
   text-shadow: 0.03em 0.03em 0 var(--ink);
-  filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* ── index ─────────────────────────────────────────────────────────────── */
@@ -165,7 +166,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.5vh;
-  max-width: 52vw;
+  max-width: 100%;
   padding-bottom: 2vh;
   overflow: hidden;
 }
@@ -180,8 +181,8 @@
   display: inline-block;
   align-self: flex-start;
   isolation: isolate;
-  font-size: clamp(32px, 6vh, 80px);
-  line-height: 0.9;
+  font-size: clamp(28px, 5vh, 64px);
+  line-height: 0.95;
   padding: 0.06em 0.2em 0.04em 0.08em;
   margin-left: -0.08em;
   max-width: 100%;
@@ -194,10 +195,10 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  transform: scaleX(1.1);
-  transform-origin: left center;
+  transform: none;
   color: var(--ink);
   text-shadow: 0.04em 0.04em 0 var(--cream);
+  max-width: 100%;
 }
 .dos__role-splat {
   position: absolute;
@@ -292,7 +293,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.9vh 2vw;
-  max-width: 62vw;
+  max-width: 100%;
 }
 .dos__duties li {
   display: grid;
