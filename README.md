@@ -1,5 +1,7 @@
 # MD. Atair Rahman Alvi — Engineering Portfolio
 
+🌟 **[Click here to view the live interactive portfolio!](https://a1vi.github.io/refantazio-portfolio/)** 🌟
+
 An interactive portfolio designed in the visual language of *Metaphor: ReFantazio*: a launch screen, a rotating wheel of hand-lettered words, and dedicated quest and codex screens for engineering milestones.
 
 ## Highlights
